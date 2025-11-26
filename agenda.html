@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Citas</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Vincula el archivo CSS -->
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoraNuts</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <img src = "Imagenes/logo.jpeg" alt="Logo" class="logo-img">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="agenda.html">Agendar Cita</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="header-content container">
+            <h1>Agenda tu cita</h1>
+            <p>
+                La nutrióloga Monica Laura Castro te dará los mejores planes tanto de dietas como de ejercicios para que inicies tu camino de vida saludable.
+            </p>
+           
+        </div>
+    </header>
+
+
+    <main class="Servicio">
+        <div class="Servicios-content container">
+            <h2>Planes</h2>
+            <div class="Servicio-group">
+                <div class="services-1">
+                    <img src="imagenes/dua.jpg" alt="">
+                    <h3>Dietas</h3>
+                </div>
+                <div class="services-1">
+                    <img src="imagenes/dua.jpg" alt="">
+                    <h3>Ejercicios</h3>
+                </div>
+                <div class="services-1">
+                    <img src="imagenes/dua.jpg" alt="">
+                    <h3>Dietas y Ejercicios</h3>
+                </div>
+            </div>
+            <p>
+                A continuación estarán los planes que manejamos para darle atención personalizada a cada uno de nuestros clientes.
+            </p>
+            <a href="Servicios.html" class="btn-1">Ver servicio</a> 
+        </div>
+    </main>
+
+    <!-- NUEVA SECCIÓN AGENDA TU CITA -->
+    <section class="general">
+        <div class="general-1">
+            <h2>Agenda tu Cita</h2>
+            <p>
+                "¡Cuida tu cuerpo, nutre tu vida! Da el primer paso hacia una alimentación saludable y equilibrada. Agenda tu cita hoy y comienza tu transformación." 🥦✨
+            </p>
+
+            <form class="form-cita" action="agendar_cita.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número Telefónico:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="10 dígitos" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="plan">Selecciona tu Plan:</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">-- Elige una opción --</option>
+                        <option value="dietas">Dietas</option>
+                        <option value="ejercicios">Ejercicios</option>
+                        <option value="dietas-ejercicios">Dietas y Ejercicios</option>
+                    </select>
+                </div>
+
+                <div class="form-btn">
+                    <button type="submit" class="btn-1">Agendar Cita</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="general-2"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="socials">
+                <a href="https://www.instagram.com/nutriologamorasnut?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="imagenes/logo-instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/morasnutricion/about?locale=es_LA" target="_blank">
+                    <img src="imagenes/logo-facebook.svg" alt="Facebook">
+                </a>
+                <a href="mailto:correo@morasnuts.com">
+                    <img src="imagenes/mail-sharp.svg" alt="Correo">
+                </a>
+            </div>
+            <p>© 2025 MorasNuts - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
